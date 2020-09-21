@@ -3,6 +3,8 @@
     --basic-dark: #363636;
     --basic-white: #ffffff;
     --basic-grey: #464646;
+    --basic-hal-grey: #D9D9D9;
+    --basic-ha-grey: #EBEBEB;
     --basic-half-grey: #7E7E7E;
     --basic-grey-light: #E5E5E5;
     --special-yellow:  #F7E296;
@@ -14,7 +16,7 @@ body{
     min-width: 1160px;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 15px;
     font-weight: 300;
     line-height: 22px;
@@ -310,5 +312,130 @@ a{
 .logo-academy:active{
     opacity: 0.3;
 }
+
+
+/*КАТАЛОГ*/
+
+/*Главная*/
+
+.login-link__out{
+    opacity: 0.3;
+}
+
+.navigation-catalogue{
+    list-style: none;
+    padding: 0;
+}
+
+.navigation-catalogue a{
+    opacity: 0.4;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--basic-black);
+}
+
+.navigation-catalogue a:hover{
+    opacity: 0.7;
+}
+
+.navigation-catalogue a:active{
+    opacity: 0.1;
+}
+
+/*Каталог-сортировка*/
+
+.catalogue-filtr h3{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.catalogue-sort{
+    list-style: none;
+    padding: 0;
+}
+
+.catalogue-sort a{
+    font-size: 14px;
+    line-height: 19px;
+    opacity: 0.3;
+    color: var(--basic-black);
+}
+
+.catalogue-sort a:hover{
+    opacity: 0.6;
+}
+
+.catalogue-sort a:active{
+    opacity: 1;
+}
+
+.catalogue-list{
+    list-style: none;
+    padding: 0;
+}
+
+.catalogue-item__info a{
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+}
+
+.catalogue-item__info p{
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+}
+
+/*Хлебные крошки*/
+.breadcrumbs{
+    background-color: var( --basic-ha-grey);
+}
+
+.breadcrumbs a{
+    color: var(--basic-black);
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.breadcrumbs-item__active{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.breadcrumbs-item a{
+    opacity: 0.3;
+}
+
+.breadcrumbs-list{
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumbs-back:hover{
+    background-color: var(--basic-hal-grey);
+}
+
+.breadcrumbs-back:active{
+    opacity: 0.3;
+}
+
+.breadcrumbs-next:hover{
+    background-color: var(--basic-hal-grey);
+}
+
+.breadcrumbs-next:active{
+    opacity: 0.3;
+}
+
+
+
 
 
