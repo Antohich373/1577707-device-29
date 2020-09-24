@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс-каталог</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -14,20 +14,18 @@
         <div class="user-link">
           <!--Форма поиска-->
           <ul class="login-list">
-            <li>
-              <a href="#" class="user-name">Валентин Петухов</a>
-              <a href="#" class="login-link login-link__out">Выйти</a>
-            </li>
+            <li><a href="#" class="user-name">Валентин Петухов</a></li>
+            <li><a href="#" class="login-link  login-link--out.">Выйти</a></li>
           </ul>
           <a href="#" class="compare-link">Сравнить</a>
           <a href="#" class="basket-link">Корзина</a>
         </div>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href='catalog.html'>Каталог</a>
+            <a>Каталог</a>
             <ul class="catalog-list">
               <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
-              <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
+              <li class="catalog-item"><a>Моноподы для селфи</a></li>
               <li class="catalog-item"><a href="#">Экшен-камеры</a></li>
               <li class="catalog-item"><a href="#">Фитнес браслеты</a></li>
               <li class="catalog-item"><a href="#">Умные часы</a></li>
@@ -56,81 +54,81 @@
       <!--Каталог товаров-->
     <section class="catalogue">
      <h2>Каталог товаров</h2>
-      <div class="catalogue-filtr">
+      <div class="catalogue-sort">
         <h3>сортировка:</h3>
-        <ul class="catalogue-sort">
+        <ul class="catalogue-list">
           <li><a href='#'>По цене</a></li>
           <li><a href='#'>По типу</a></li>
           <li><a href='#'>По популярности</a></li>
         </ul>
-        <div class="catalogue-dir">
-          <a class="dir-up"><span></span></a>
-          <a class="dir-down"><span></span></a>
+        <div class="catalogue_sort-links">
+          <a class="dir-up"><span class="vissually-hidden">по убыванию</span></a>
+          <a class="dir-down"><span class="vissually-hidden">по возрастанию</span></a>
         </div>
       </div>
       <ul class="catalogue-list">
         <li class="catalogue-item">
           <img src="#" alt="Любительская селфи-палка" width="360" height="380">
           <div class="catalogue-item__info">
-            <h3><a>Любительская селфи-палка</a></h3>
+            <h3><a href="#">Любительская селфи-палка</a></h3>
             <p>500 руб.</p> 
           </div>
-          <div class="catalogue-item__popap">
+          <div class="catalogue-item__popup">
             <a href="#" class="button">В корзину</a>
-            <a>Добавть к сравнению</a>
+            <a>Добавить к сравнению</a>
           </div>
         </li>
         <li class="catalogue-item">
           <img src="#" alt="Профессиональная селфи-палка"  width="360" height="380">
           <div class="catalogue-item__info">
-            <h3><a>Любительская селфи-палка</a></h3>
+            <h3><a href="#">Профессиональная селфи-палка </a></h3>
             <p>500 руб.</p> 
           </div>
           <div class="catalogue-item__popap">
             <a href="#" class="button">В корзину</a>
-            <a>Добавть к сравнению</a>
+            <a>Добавить к сравнению</a>
           </div>
         </li>
         <li class="catalogue-item">
           <img src="#" alt="Непотопляемая селфи-палка"  width="360" height="380">
           <div class="catalogue-item__info">
-            <h3><a>Любительская селфи-палка</a></h3>
+            <h3><a href="#">Непотопляемая селфи-палка</a></h3>
             <p>500 руб.</p> 
           </div>
           <div class="catalogue-item__popap">
             <a href="#" class="button">В корзину</a>
-            <a>Добавть к сравнению</a>
+            <a>Добавить к сравнению</a>
           </div>
         </li>
         <li class="catalogue-item">
           <img src="#" alt="Селфи-палка «Следуй за мной»"  width="360" height="380">
           <a>
           <div class="catalogue-item__info">
-            <h3><a>Любительская селфи-палка</a></h3>
+            <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
             <p>500 руб.</p> 
           </div>
           </a>
           <div class="catalogue-item__popap">
             <a href="#" class="button">В корзину</a>
-            <a>Добавть к сравнению</a>
+            <a>Добавить к сравнению</a>
           </div>
         </li>
       </ul>
-      <div class="breadcrumbs">
-        <a href="#" class="breadcrumbs-back">назад</a>
-        <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-item breadcrumbs-item__active">1</li>
-          <li class="breadcrumbs-item"><a href='#'>2</a></li>
-          <li class="breadcrumbs-item"><a href='#'>3</a></li>
+      <div class="pagination">
+        <a href="#" class="pagination-back">назад</a>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item--active">1</li>
+          <li class="pagination-item"><a href='#'>2</a></li>
+          <li class="pagination-item"><a href='#'>3</a></li>
         </ul>
-        <a href="#" class="breadcrumbs-next">вперед</a>
+        <a href="#" class="pagination-next">вперед</a>
       </div>
     </section>
     </main>
 
     <footer class="main-footer">
       <div class="user-link__footer">
-        <a class="footer-logo" href="index.html"><img src="img/logo.svg" width="163" height="34" style="opacity: 1;"></a>
+        <a class="footer-logo" href="index.html"><img src="img/logo.svg" width="163" height="34"></a>
         <ul>
           <li><a href="#" class="user-name">Валентин Петухов</a></li>
           <li><a href="#" class="login-link login-link__out">Выйти</a></li>
