@@ -3,13 +3,15 @@
     --basic-dark: #363636;
     --basic-white: #ffffff;
     --basic-grey: #464646;
-    --basic-hal-grey: #D9D9D9;
-    --basic-ha-grey: #EBEBEB;
-    --basic-half-grey: #7E7E7E;
+    --basic-half-100: #D9D9D9;
+    --basic-half-200: #EBEBEB;
+    --basic-half-300: #7E7E7E;
     --basic-grey-light: #E5E5E5;
     --special-yellow:  #F7E296;
     --special-green: #91C92F;
     --special-yellow-dark:#F0C52E;
+
+
 }
 
 body{
@@ -99,17 +101,17 @@ a{
 
 /*Демонстрация товаров*/
 
-.button-product__list{
+.product__botton--list{
     list-style: none;
     padding: 0;
 }
 
-.product-list{
+.product__list{
     list-style: none;
     padding: 0;
 }
 
-.product-header{
+.product__item--header{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
@@ -170,56 +172,56 @@ a{
     background-color: var(--basic-grey-light);
 }
 
-.advantages-button__list,
-.advantages-slid__list{
+.advantages__button--list,
+.advantages__slid--list{
     list-style: none;
     padding: 0;
 }
 
-.advantages-button__active{
+.advantages__button--active{
     background-color: var(--basic-black);
     color: var(--special-yellow);
 }
 
-.advantages-slid__item h3{
+.advantages__slid--item h3{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
 }
 
-.advantages-slid__item p{
+.advantages__slid--item p{
     font-size: 15px;
     line-height: 28px;
 }
 
 /*Партнеры*/
-.partners-list{
+.partners__list{
     list-style: none;
     padding: 0;
 }
 
-.partners-link{
+.partners__link{
     opacity: 0.6;
 }
 
-.partners-link:hover{
+.partners__link:hover{
     opacity: 1;
 }
 
 /*О нас*/
 
-.about-header{
+.about__header{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
 }
 
-.about-header p{
+.about__header p{
     font-size: 15px;
     line-height: 28px;
 }
 
-.about-list{
+.about__list{
     list-style: none;
     font-weight: 800;
     font-size: 16px;
@@ -228,13 +230,13 @@ a{
 
 /*Контакты*/
 
-.contacts-header{
+.contacts__header{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
 }
 
-.contacts-text{
+.contacts__text{
     font-size: 15px;
     line-height: 28px;
 }
@@ -245,37 +247,37 @@ a{
     background-color: var(--basic-dark);
 }
 
-.footer-logo:hover{
+.footer__logo:hover{
     opacity: 0.7;
 }
 
-.footer-logo:active{
+.footer__logo:active{
     opacity: 0.3;
 }
 
-.user-link__footer ul{
+.footer__user-link ul{
     list-style: none;
     padding: 0;
 }
 
-.user-link__footer a:not(.footer-logo){
+.footer__user-link a:not(.footer__logo){
     color: var(--basic-white);
     opacity: 0.7;
 }
 
-.user-link__footer a:hover:not(.footer-logo){
+.footer__user-link a:hover:not(.footer__logo){
     opacity: 1;
 }
 
-.user-link__footer a:active{
+.footer__user-link a:active{
     opacity: 0.3;
 }
 
-.footer-row__one p{
+.footer__row-one p{
     color: var(--basic-white);
 }
 
-.footer-info{
+.footer__row-one-info{
     list-style: none;
     padding: 0;
     font-weight: 800;
@@ -285,15 +287,15 @@ a{
     text-transform: uppercase;
 }
 
-.footer-info a{
+.footer__row-one-info a{
     color: var(--basic-white);
 }
 
-.footer-info a:hover{
+.footer__row-one-info a:hover{
     opacity: 0.7;
 }
 
-.footer-info a:active{
+.footer__row-one-info a:active{
     opacity: 0.3;
 }
 
@@ -301,7 +303,7 @@ a{
     color: var(--basic-white);
 }
 
-.social-list{
+.footer__social--list{
     list-style: none;
     padding: 0;
 }
@@ -352,50 +354,62 @@ a{
     text-transform: uppercase;
 }
 
-.catalogue-sort{
+.catalogue__sort{
     list-style: none;
     padding: 0;
     font-weight: 400;
 }
 
-.catalogue-sort a{
+.catalogue__sort--list{
+    list-style: none;
+}
+
+.catalogue__sort a{
     font-size: 14px;
     line-height: 19px;
     opacity: 0.3;
     color: var(--basic-black);
 }
 
-.catalogue-sort a:hover{
+.catalogue__sort a:hover{
     opacity: 0.6;
 }
 
-.catalogue-sort a:active{
+.catalogue__sort a:active{
     opacity: 1;
 }
 
-.catalogue-list{
+.catalogue__list{
     list-style: none;
     padding: 0;
 }
 
-.catalogue-item__info a{
+.catalogue__item--info a{
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.05em;
+    color: var(--basic-black);
 }
 
-.catalogue-item__info p{
+.catalogue__item--info p{
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.05em;
 }
 
-/*Хлебные крошки*/
-.breadcrumbs{
-    background-color: var( --basic-ha-grey);
+.catalogue__item--popup a:nth-child(2){
+    color: var(--basic-black);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
 }
 
-.breadcrumbs a{
+/*Хлебные крошки*/
+.pagination{
+    background-color: var( --basic-half-200);
+}
+
+.pagination a{
     color: var(--basic-black);
     font-weight: 800;
     font-size: 16px;
@@ -404,7 +418,7 @@ a{
     text-transform: uppercase;
 }
 
-.breadcrumbs-item__active{
+.pagination-item--active{
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
@@ -412,28 +426,28 @@ a{
     text-transform: uppercase;
 }
 
-.breadcrumbs-item a{
+.pagination-item a{
     opacity: 0.3;
 }
 
-.breadcrumbs-list{
+.pagination-list{
     list-style: none;
     padding: 0;
 }
 
-.breadcrumbs-back:hover{
-    background-color: var(--basic-hal-grey);
+.pagination-back:hover{
+    background-color: var( --basic-half-100);
 }
 
-.breadcrumbs-back:active{
+.pagination-back:active{
     opacity: 0.3;
 }
 
-.breadcrumbs-next:hover{
-    background-color: var(--basic-hal-grey);
+.pagination-next:hover{
+    background-color: var( --basic-half-100);
 }
 
-.breadcrumbs-next:active{
+.pagination-next:active{
     opacity: 0.3;
 }
 
