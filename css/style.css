@@ -101,7 +101,7 @@ a{
 
 /*Демонстрация товаров*/
 
-.product__botton--list{
+.product__botton-list{
     list-style: none;
     padding: 0;
 }
@@ -172,8 +172,8 @@ a{
     background-color: var(--basic-grey-light);
 }
 
-.advantages__button--list,
-.advantages__slid--list{
+.advantages__button-list,
+.advantages__slid-list{
     list-style: none;
     padding: 0;
 }
@@ -183,13 +183,13 @@ a{
     color: var(--special-yellow);
 }
 
-.advantages__slid--item h3{
+.advantages__slid-item h3{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
 }
 
-.advantages__slid--item p{
+.advantages__slid-item p{
     font-size: 15px;
     line-height: 28px;
 }
@@ -303,7 +303,7 @@ a{
     color: var(--basic-white);
 }
 
-.footer__social--list{
+.footer__social-list{
     list-style: none;
     padding: 0;
 }
@@ -360,8 +360,9 @@ a{
     font-weight: 400;
 }
 
-.catalogue__sort--list{
+.catalogue__sort-list{
     list-style: none;
+    padding: 0;
 }
 
 .catalogue__sort a{
@@ -384,20 +385,20 @@ a{
     padding: 0;
 }
 
-.catalogue__item--info a{
+.catalogue__item-info a{
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.05em;
     color: var(--basic-black);
 }
 
-.catalogue__item--info p{
+.catalogue__item-info p{
     font-size: 16px;
     line-height: 18px;
     letter-spacing: 0.05em;
 }
 
-.catalogue__item--popup a:nth-child(2){
+.catalogue__item-popup a:nth-child(2){
     color: var(--basic-black);
     font-weight: 300;
     font-size: 13px;
