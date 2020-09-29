@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title> 
@@ -7,44 +7,42 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="main-header">
-      <div class="navigation-wrapper">
-        <nav class="main-navigation">
-          <a class="header-logo"><img src="img/logo.svg" alt="логотип-Device" width="163" height="35"></a>
-          <div class="user-link">
-            <div class="form-search">поиск</div><!--Форма поиска-->
-            <ul class="login-list">
-              <li><a href="#" class="login-link">Войти</a></li>
-            </ul>
-            <a href="#" class="compare-link">Сравнить</a>
-            <a href="#" class="basket-link">Корзина</a>
-          </div>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a>Каталог</a>
-              <ul class="catalog-list">
-                <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
-                <li class="catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
-                <li class="catalog-item"><a href="#">Экшен-камеры</a></li>
-                <li class="catalog-item"><a href="#">Фитнес браслеты</a></li>
-                <li class="catalog-item"><a href="#">Умные часы</a></li>
-                <li class="catalog-item"><a href="#">Квадракоптеры</a></li>
-              </ul>
-            </li>
-            <li class="navigation-item"><a href="#">Доставка</a></li>
-            <li class="navigation-item"><a href="#">Гарантия</a></li>
-            <li class="navigation-item"><a href="#">Контакты</a></li>
+  <body class="page-body">
+    <header class="main-header container">
+      <nav class="main-navigation">
+        <a class="header-logo"><img src="img/logo.svg" alt="логотип-Device" width="163" height="35"></a>
+        <div class="user-link">
+          <div class="form-search">поиск</div><!--Форма поиска-->
+          <ul class="login-list">
+            <li><a href="#" class="login-link">Войти</a></li>
           </ul>
-        </nav>
-      </div>  
+          <a href="#" class="compare-link">Сравнить</a>
+          <a href="#" class="basket-link">Корзина</a>
+        </div>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a>Каталог</a>
+            <ul class="catalog-list">
+              <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
+              <li class="catalog-item"><a href="#">Экшен-камеры</a></li>
+              <li class="catalog-item"><a href="#">Фитнес браслеты</a></li>
+              <li class="catalog-item"><a href="#">Умные часы</a></li>
+              <li class="catalog-item"><a href="#">Квадракоптеры</a></li>
+            </ul>
+          </li>
+          <li class="navigation-item"><a href="#">Доставка</a></li>
+          <li class="navigation-item"><a href="#">Гарантия</a></li>
+          <li class="navigation-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <h1 class="visually-hidden">Магазин электорники Device</h1>
       <!--Демонстрация товаров-->
       <section class="product">
-        <div class="conteiner">
+        <div class="container">
           <h2 class="visually-hidden">Демонстрация товаров</h2>
           <ul class="product-button-list">
             <li><button type="button" class="button product-botton product-button--active"><span>Слайд 1</span></button></li>
@@ -112,7 +110,7 @@
 
       <!--Категории товаров-->
       <section class="product-category">
-        <div class="conteiner">
+        <div class="container">
           <h2 class="visually-hidden">Категории товаров</h2>
           <ul class="product-category-list">
             <li>
@@ -169,7 +167,7 @@
 
       <!--Преимущества-->
       <section class="advantages">
-        <div class="conteiner">
+        <div class="container">
           <div class="advantages-conteiner">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="advantages-button-list">
@@ -208,7 +206,7 @@
        <!--Партнеры-->
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
-        <div class="conteiner">
+        <div class="container">
           <ul class="partners-list">
             <li><a href="#" class="partners-link"><img src="img/partners-logo-1.png" alt="партнер dji" width="260" height="100"></a></li>
             <li><a href="#" class="partners-link"><img src="img/partners-logo-2.png" alt="партнер gatges" width="260" height="100"></a></li>
@@ -218,7 +216,7 @@
         </div>
       </section>
 
-      <div class="contact-info conteiner">
+      <div class="contact-info container">
         <!--О нас-->
         <section class="about">
           <h2 class="about-header">О нас</h2>
@@ -252,7 +250,7 @@
     </main>
 
     <footer class="main-footer">
-      <div class="conteiner">
+      <div class="container">
         <div class="footer-user-link">
           <a class="footer-logo"><img src="img/footer-logo.svg" alt="логотип-Device" width="163" height="34"></a>
           <ul>
