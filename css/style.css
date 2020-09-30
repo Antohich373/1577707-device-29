@@ -2,7 +2,8 @@
     --basic-black: #000;
     --basic-dark: #363636;
     --basic-white: #ffffff;
-    --basic-grey: #464646;
+    --basic-grey-100: #dcdcdc;
+    --basic-grey-500: #464646;
     --basic-half-100: #D9D9D9;
     --basic-half-200: #EBEBEB;
     --basic-half-300: #7E7E7E;
@@ -131,17 +132,25 @@ a{
     flex-wrap: wrap;
 }
 
+.navigation-item:nth-child(1) a{
+    padding-right: 34px;
+}
+
 .navigation-item:nth-child(1){
-    width: 225px;/*Временно. Потом я падинг задам для псевдо элемента и уберу*/
-    margin-right: 315px;
+    margin-right: 314px;
+    letter-spacing: 0.1em;
+}
+
+.navigation-item:not(:nth-child(1)){
+    letter-spacing: 0.2em;
 }
 
 .navigation-item:nth-child(2){
-    margin-right: 40px;
+    margin-right: 38px;
 }
 
-.navigation-item:nth-child(4){
-    margin-left: auto;
+.navigation-item:nth-child(3){
+    margin-right: 95px;
 }
 
 .navigation-item a:hover{
@@ -496,6 +505,31 @@ a{
 }
 
 /*Каталог-сортировка*/
+.catalog-association{
+    display: flex;
+    justify-content: space-between;
+    margin: 45px auto 0;
+}
+
+.breadcrumbs{
+    padding: 0px 80px;
+    box-sizing: border-box;
+}
+
+.filtr{
+    background-color: var(--basic-grey-100);
+    flex-grow: 1;
+}
+
+.filtr-wraper{
+    width: 268px;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.catalogue{
+    flex-grow: 1;
+}
 
 .catalogue-filtr h3{
     font-weight: 800;
@@ -504,15 +538,22 @@ a{
     text-transform: uppercase;
 }
 
+.catalogue-sort h3{
+    margin: 0;
+    padding: 0;
+}
+
 .catalogue-sort{
     list-style: none;
     padding: 0;
     font-weight: 400;
+    background-color: var( --basic-grey-light); 
 }
 
 .catalogue-sort-list{
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .catalogue-sort a{
@@ -533,7 +574,18 @@ a{
 .catalogue-list{
     list-style: none;
     padding: 0;
+    margin: 0;
+    padding-left: 70px;
+    width: 870px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
+
+
+
+
 
 .catalogue-item-info a{
     font-weight: 800;
