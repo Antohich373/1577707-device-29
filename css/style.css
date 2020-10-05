@@ -24,6 +24,24 @@
 	overflow: hidden;
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Extrabold'), local('Gilroy Extrabold'),
+        url('../fonts/gilroyextrabold.woff2') format('woff2'),
+        url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('Gilroy Light'),
+        url('../fonts/gilroylight.woff2') format('woff2'),
+        url('../fonts/gilroylight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+  }
+
 body{
     min-width: 1200px;
     margin: 0;
@@ -90,7 +108,7 @@ a{
 
 .form-search{
     width: 144px;
-    margin-right:  396px;
+    margin-right:  398px;
 }
 
 .user-link{
@@ -99,6 +117,7 @@ a{
 }
 
 .compare-link{
+    margin: 0;
     margin-left: auto;
 }
 
@@ -127,30 +146,44 @@ a{
     margin: 0;
 }
 
+.navigation-item{
+    margin-right: 38px;
+}
+
 .navigation-list{
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 
 .navigation-item:nth-child(1) a{
-    padding-right: 34px;
+    margin: 0;
+    padding-right: 35px;
 }
 
 .navigation-item:nth-child(1){
-    margin-right: 314px;
-    letter-spacing: 0.1em;
-}
-
-.navigation-item:not(:nth-child(1)){
-    letter-spacing: 0.2em;
+    margin: 0;
+    margin-right: 289px;
 }
 
 .navigation-item:nth-child(2){
+    margin: 0;
     margin-right: 38px;
 }
 
 .navigation-item:nth-child(3){
-    margin-right: 95px;
+    margin: 0;
+    margin-right: 97px;
+}
+
+.navigation-item:nth-child(4){
+    margin: 0;
 }
 
 .navigation-item a:hover{
@@ -218,6 +251,9 @@ a{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
 }
 
 .button{
@@ -228,6 +264,18 @@ a{
     font-size: 18px;
     line-height: 22px;
     border: none;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+}
+
+
+
+.product-specification-item{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
 }
 
 .product-specification-item dt{
@@ -257,6 +305,7 @@ a{
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
+    font-family: 'Gilroy';
 }
 
 .product-img{
@@ -313,6 +362,8 @@ a{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
+    font-family: 'Gilroy';
+    letter-spacing: 0.2em;
 }
 
 .advantages-slid-item p{
@@ -347,6 +398,8 @@ a{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
+    letter-spacing: 0.2em;
+    font-family: 'Gilroy';
 }
 
 .about-header p{
@@ -358,7 +411,9 @@ a{
     list-style: none;
     font-weight: 800;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 28px;  
+    font-family: 'Gilroy';
+
 }
 
 /*Контакты*/
@@ -367,6 +422,8 @@ a{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
+    letter-spacing: 0.2em;
+    font-family: 'Gilroy';
 }
 
 .contacts-text{
@@ -429,6 +486,8 @@ a{
 .footer-row-one-info{
     list-style: none;
     padding: 0;
+    font-family: 'Gilroy';
+    letter-spacing: 0.2em;
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -479,6 +538,17 @@ a{
 /*КАТАЛОГ*/
 
 /*Главная*/
+.breadcrumbs{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.breadcrumbs h1{
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+}
 
 .login-link-out{
     opacity: 0.3;
@@ -507,35 +577,44 @@ a{
 /*Каталог-сортировка*/
 .catalog-association{
     display: flex;
-    justify-content: space-between;
-    margin: 45px auto 0;
 }
 
-.breadcrumbs{
-    padding: 0px 80px;
-    box-sizing: border-box;
-}
 
 .filtr{
-    background-color: var(--basic-grey-100);
     flex-grow: 1;
+    background-color: var(--basic-grey-light);
+}
+
+.filtr-color{
+    background-color: var(--basic-grey-100);    
 }
 
 .filtr-wraper{
     width: 268px;
     margin-left: auto;
-    box-sizing: border-box;
+}
+
+.filtr-form-wraper{
+    width: 268px;
+    margin-left: auto;
+}
+
+.filtr-wraper h2{
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .catalogue{
     flex-grow: 1;
 }
 
-.catalogue-filtr h3{
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
+.catalogue-sort-wraper{
+    width: 830px;
+    display: flex;
+    padding: 25px 75px;
+    padding-right: 0;
 }
 
 .catalogue-sort h3{
@@ -554,6 +633,7 @@ a{
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 .catalogue-sort a{
@@ -572,20 +652,24 @@ a{
 }
 
 .catalogue-list{
+    width: 760px;
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-left: 70px;
-    width: 870px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
+    margin-left: 75px;
+    margin-top: 69px;
 }
 
-
-
-
+.catalogue-item-info h3{
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    font-family: Gilroy;
+}
 
 .catalogue-item-info a{
     font-weight: 800;
@@ -609,7 +693,13 @@ a{
 
 /*Хлебные крошки*/
 .pagination{
+    width: 760px;
+    padding: 25px  30px;
     background-color: var( --basic-half-200);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 72px;
+    box-sizing: border-box;
 }
 
 .pagination a{
@@ -617,6 +707,7 @@ a{
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
+    font-family: Gilroy;
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -636,6 +727,8 @@ a{
 .pagination-list{
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 .pagination-back:hover{
