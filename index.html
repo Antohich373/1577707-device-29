@@ -12,7 +12,10 @@
       <nav class="main-navigation">
         <a class="header-logo"><img src="img/logo.svg" alt="логотип-Device" width="163" height="35"></a>
         <div class="user-link">
-          <div class="form-search">поиск</div><!--Форма поиска-->
+          <form class="form-search" method="GET" action="https://echo.htmlacademy.ru">
+            <input type="search" name="search" aria-label="Поиск по сайту" placeholder="поиск по сайту">
+            <button type="submit" class="search-button">Найти</button>
+          </form>
           <ul class="login-list">
             <li><a href="#" class="login-link">Войти</a></li>
           </ul>
@@ -44,15 +47,17 @@
       <section class="product container">
         <h2 class="visually-hidden">Демонстрация товаров</h2>
         <ul class="product-button-list">
-          <li><button type="button" class="button product-botton product-button--active"><span>Слайд 1</span></button></li>
-          <li><button type="button" class="button product-botton"><span>Слайд 2</span></button></li>
-          <li><button type="button" class="button product-botton"><span>Слайд 3</span></button></li>
+          <li><button aria-label="Слайд 1" type="button" class="product-botton product-button--active"></button></li>
+          <li><button aria-label="Слайд 2" type="button" class="product-botton"></button></li>
+          <li><button aria-label="Слайд 3" type="button" class="product-botton"></button></li>
         </ul>
         <ul class="product-list">
-          <li class="product-item">
-            <img src="img/produkt-slider1.png" alt="Селфи палка" width="384" height="486">
+          <li class="product-item product-item--active">
+            <div class="product-item-img">
+              <img src="img/produkt-slider1.png" alt="Селфи палка" width="384" height="486">
+            </div>
             <div class="product-item--info">
-              <p class="product-item--header">Делай селфи, как Бен Стиллер! </p>
+              <p class="product-item--header">Делай селфи,<br> как Бен Стиллер!</p>
               <p class="product-item--text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a href="#" class="button product-item--botton-detail">Подробнее</a>
               <dl class="product-specifications-list">
@@ -71,10 +76,12 @@
               </dl>
             </div>  
           </li>
-          <li class="product-item">
-            <img src="img/produkt-slider2.png" alt="Фитнес-браслет" width="345" height="485">
+          <li class="product-item ">
+            <div class="product-item-img">
+              <img src="img/produkt-slider2.png" alt="Фитнес-браслет" width="345" height="485">
+            </div>
             <div class="product-item--info">
-              <p class="product-item--header">Худеем правильно! </p>
+              <p class="product-item--header">Худеем<br> правильно! </p>
               <p class="product-item--text">Мотивируюшие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a href="#" class="button product-item--botton-detail">Подробнее</a>
               <dl class="product-specifications-list">
@@ -86,7 +93,9 @@
             </div>  
           </li>
           <li class="product-item">
-            <img src="img/produkt-slider3.png" alt="Квадракоптер" width="526" height="334">
+            <div class="product-item-img">
+              <img src="img/produkt-slider3.png" alt="Квадракоптер" width="526" height="334">
+            </div>
             <div class="product-item--info">
               <p class="product-item--header">Порхает как бабочка, жалит как пчела!</p>
               <p class="product-item--text">Это обычный, на первый взгляд, квадракоптер оснащен мощным лазером, замаскированым под стандартную камеру.</p>
@@ -166,12 +175,12 @@
         <div class="container advantages-conteiner">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-button-list">
-            <li><button type="button" class="button advantages-button advantages-button--active">Доставка</button> </li>
-            <li><button type="button" class="button advantages-button">Гарантия</button></li>
-            <li><button type="button" class="button advantages-button">Кредит</button></li>
+            <li><button type="button" aria-label="Доставка" class="button advantages-button button-delivery advantages-button--active">Доставка</button> </li>
+            <li><button type="button" aria-label="Гарантия" class="button advantages-button  button-guarante">Гарантия</button></li>
+            <li><button type="button" aria-label="Кредит" class="button advantages-button button-credit">Кредит</button></li>
           </ul>
           <ul class="advantages-slid-list">
-            <li class="advantages-slid-item">
+            <li class="advantages-slid-item ">
               <h3>Доставка</h3>
               <p>
                 Мы с удовольствием доставим ваш товар прямо к вашему 
@@ -179,18 +188,18 @@
                 заработаем, поднимая его на ваш этаж.
               </p>
             </li> 
-            <li class="advantages-slid-item">
+            <li class="advantages-slid-item ">
               <h3>Гарантия</h3>
               <p>
                 Если из-за возгорания купленного у нас товара у вас сгорит дом - 
                 не переживайте, мы выдадим вас новый. Товар, не дом, конечно же.
               </p>
             </li>
-            <li class="advantages-slid-item">
+            <li class="advantages-slid-item advantages-slid-active">
               <h3>Кредит</h3>
               <p>
                 Залезть в долговую яму стало еще проще! Кредитные консультанты подберут для вас 
-                наиболее выгодные условия кредита. Выгодные для нашего банка, разумееться.
+                наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумееться.
               </p>
             </li>
           </ul>
@@ -246,10 +255,10 @@
         <div class="footer-user-link">
           <a class="footer-logo"><img src="img/footer-logo.svg" alt="логотип-Device" width="163" height="34"></a>
           <ul>
-            <li><a href="#" class="login-link">Войти</a></li>
+            <li><a href="#" class="footer-login-link">Войти</a></li>
           </ul>
-          <a href="#">Сравнить</a>
-          <a href="#">Корзина</a>
+          <a href="#" class="footer-compare-link">Сравнить</a>
+          <a href="#" class="footer-basket-link">Корзина</a>
         </div>
         <div class="footer-row-one">
           <p >г. Москва, ул. Строителей, 15</p> 
@@ -262,9 +271,9 @@
         </div>
         <div class="footer-social">
           <ul class="footer-social-list">
-            <li><a href="#" class="social-link"><span>facebook</span></a></li>
-            <li><a href="#" class="social-link"><span>instagram</span></a></li>
-            <li><a href="#" class="social-link"><span>twitter</span></a></li>
+            <li><a href="#" class="social-link facebook"><span class="visually-hidden">facebook</span></a></li>
+            <li><a href="#" class="social-link instagram"><span class="visually-hidden">instagram</span></a></li>
+            <li><a href="#" class="social-link twitter"><span class="visually-hidden">twitter</span></a></li>
           </ul>
           <a class="logo-academy" href="https://htmlacademy.ru/profession/frontender"><img src="img/htmlacademy.svg" alt="логотип html academy" width="26" height="34"></a>
         </div>
