@@ -17,7 +17,7 @@
             <button type="submit" class="search-button">Найти</button>
           </form>
           <ul class="login-list">
-            <li><a href="#" class="login-link">Войти</a></li>
+            <li class="login-item"><a href="#" class="login-link">Войти</a></li>
           </ul>
           <a href="#" class="compare-link">Сравнить</a>
           <a href="#" class="basket-link">Корзина</a>
@@ -121,49 +121,49 @@
         <ul class="product-category-list">
           <li>
             <a href="#" class="product-category-link">
-              <div class="product-img">
+              <span class="product-img">
                 <img src="img/product-category1.svg" alt="очки виртуальной реальности" width="97" height="55">
-              </div>
+              </span>
               <span>Виртуальная реальность</span>
             </a>
           </li>
           <li>
             <a href="#" class="product-category-link">
-              <div class="product-img">
+              <span class="product-img">
                 <img src="img/product-category2.svg" alt="Селфи палка" width="86" height="117">
-              </div>
+              </span>
               <span>Моноподы для селфи</span>
             </a>
           </li>
           <li>
             <a href="#" class="product-category-link">
-              <div class="product-img">
+              <span class="product-img">
                 <img src="img/product-category3.svg" alt="Экшен камера" width="71" height="87">
-              </div>
+              </span>
               <span>Экшен-камеры</span>
             </a> 
           </li>
           <li>
             <a href="#" class="product-category-link">
-              <div class="product-img">
+              <span class="product-img">
                 <img src="img/product-category4.svg" alt="Фитнес браслет" width="107" height="65">
-              </div>
+              </span>
               <span>Фитнес браслеты</span>
             </a>
           </li>
           <li>
             <a href="#" class="product-category-link">
-              <div class="product-img">
+              <span class="product-img">
                 <img src="img/product-category5.svg" alt="Умные часы" width="56" height="98">
-              </div>
+              </span>
               <span>Умные часы</span>
             </a>
           </li>
           <li>
             <a href="#" class="product-category-link">
-              <div class="product-img">
+              <span class="product-img">
                 <img src="img/product-category6.svg" alt="Квадракоптер" width="132" height="69">
-              </div>
+              </span>
               <span>Квадракоптеры</span>
             </a>
           </li>
@@ -175,12 +175,12 @@
         <div class="container advantages-conteiner">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-button-list">
-            <li><button type="button" aria-label="Доставка" class="button advantages-button button-delivery advantages-button--active">Доставка</button> </li>
-            <li><button type="button" aria-label="Гарантия" class="button advantages-button  button-guarante">Гарантия</button></li>
+            <li><button type="button" aria-label="Доставка" class="button advantages-button advantages-button--active">Доставка</button> </li>
+            <li><button type="button" aria-label="Гарантия" class="button advantages-button">Гарантия</button></li>
             <li><button type="button" aria-label="Кредит" class="button advantages-button button-credit">Кредит</button></li>
           </ul>
           <ul class="advantages-slid-list">
-            <li class="advantages-slid-item ">
+            <li class="advantages-slid-item advantages-slid-active">
               <h3>Доставка</h3>
               <p>
                 Мы с удовольствием доставим ваш товар прямо к вашему 
@@ -195,7 +195,7 @@
                 не переживайте, мы выдадим вас новый. Товар, не дом, конечно же.
               </p>
             </li>
-            <li class="advantages-slid-item advantages-slid-active">
+            <li class="advantages-slid-item">
               <h3>Кредит</h3>
               <p>
                 Залезть в долговую яму стало еще проще! Кредитные консультанты подберут для вас 
@@ -254,11 +254,13 @@
       <div class="container">
         <div class="footer-user-link">
           <a class="footer-logo"><img src="img/footer-logo.svg" alt="логотип-Device" width="163" height="34"></a>
-          <ul>
-            <li><a href="#" class="footer-login-link">Войти</a></li>
-          </ul>
-          <a href="#" class="footer-compare-link">Сравнить</a>
-          <a href="#" class="footer-basket-link">Корзина</a>
+          <div class="user-social">
+            <ul class="footer-login-list">
+              <li class="footer-login-item"><a href="#" class="footer-login-link">Войти</a></li>
+            </ul>
+            <a href="#" class="footer-compare-link">Сравнить</a>
+            <a href="#" class="footer-basket-link">Корзина</a>
+          </div>
         </div>
         <div class="footer-row-one">
           <p >г. Москва, ул. Строителей, 15</p> 
