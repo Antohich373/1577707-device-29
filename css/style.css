@@ -423,6 +423,8 @@ a{
     display: none;
 }
 
+.navigation-item:focus-within + .catalog-list,
+.navigation-item:focus .catalog-list,
 .navigation-item:hover .catalog-list{
     display: flex;
 }
