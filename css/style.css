@@ -167,7 +167,7 @@ a{
     height: 16px;
     background-image: url('../img/icon_search.svg');
     left: 0;
-    top: 20px;
+    top: 5px;
     z-index: 1;
 }
 
@@ -202,6 +202,8 @@ a{
     position: relative;
     opacity: 0;
     transition: all 0.2s;
+    position: absolute;
+    top: -15px;
 }
 
 .search-button::after{
@@ -224,7 +226,7 @@ a{
     color: var(--basic-white) 0.3;
 }
 
-.form-search input:focus-within + .search-button{
+.form-search:focus-within input + .search-button{
     opacity: 1;
 }
 
@@ -232,8 +234,9 @@ a{
 .user-link{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     align-items: center;
+    margin-top: 10px;
 }
 
 .user-link a{
@@ -410,7 +413,7 @@ a{
     line-height: 20px;
     z-index: 1;
     width: 1100px;
-    height: 147px;
+    height: 132px;
     padding-left: 60px;
     padding-top: 33px;
     display: flex;
@@ -423,9 +426,9 @@ a{
     display: none;
 }
 
-.navigation-item:focus-within + .catalog-list,
-.navigation-item:focus .catalog-list,
-.navigation-item:hover .catalog-list{
+.navigation-item:focus-within .catalog-list,
+.navigation-item:hover .catalog-list,
+.navigation-item:focus .catalog-list{
     display: flex;
 }
 
@@ -458,7 +461,7 @@ a{
 /*Демонстрация товаров*/
 .product{
     position: relative;
-    margin-bottom: 116px;
+    margin-bottom: 100px;
 }
 
 .product-button-list{
@@ -466,8 +469,8 @@ a{
     list-style: none;
     padding: 0;
     position: absolute;
-    right: 88px;
-    bottom: 148px;
+    right: 106px;
+    bottom: 137px;
     z-index: 1;
 }
 
@@ -505,7 +508,7 @@ a{
 .product-item.product-item--active{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 40px;
     position: relative;
 }
 
@@ -513,7 +516,7 @@ a{
     position: absolute;
     content: '01';
     right: 47px;
-    top: -20px;
+    top: 0px;
     font-family: Gilroy;
     font-style: normal;
     font-weight: 800;
@@ -554,7 +557,8 @@ a{
     padding: 0;
     margin: 0;
     position: relative;
-    background-image: linear-gradient(  #F7E296 130px, #fff 30px);
+    background-image: linear-gradient(  #F7E296 155px, #fff 30px);
+    margin-top: -40px;
 }
 
 .product-item-img{
@@ -572,7 +576,7 @@ a{
     font-style: normal;
     font-weight: 800;
     margin: 0;
-    margin-top: 95px;
+    margin-top: 115px;
 }
 
 .product-item--header::before{
@@ -581,7 +585,7 @@ a{
     width: 100px;
     height: 7px;
     background-color: var(--basic-white);
-    top: -52px;
+    top: -58px;
     display: block;
     background-repeat: no-repeat;
 }
@@ -589,7 +593,7 @@ a{
 .product-specifications-list{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin-top: 52px;
     width: 444px;
 }
 .product-item--text{
@@ -599,11 +603,12 @@ a{
 
 .product-specification-item dt{
     margin-bottom: 15px;
+    letter-spacing: normal;
+    letter-spacing: 0.1em;
 }
 
 .product-specification-item{
     font-family: 'Gilroy';
-    font-style: normal;
     font-weight: lighter;
     letter-spacing: 0.1em;
     margin-right: 60px;
@@ -613,25 +618,32 @@ a{
     margin: 0;
 }
 
-.product-specification-item dt{
+.product-specification-item dd{
     font-size: 36px;
     line-height: 42px;
+    margin-inline-start: 0px;
+    margin-bottom: 15px;
+    letter-spacing: 0.1em;
 }
 
-.product-specification-item dd{
+.product-specification-item dt{
     font-size: 13px;
     line-height: 15px;  
     margin: 0;
 }
 
 .product-item--botton-detail{
-    margin-top: 60px;
+    margin-top: 45px;
     width: 220px;
     
 }
 
 
 /*Категории товаров*/
+
+.product-category{
+    margin-bottom: 70px;
+}
 
 .product-category-list{
     list-style: none;
@@ -640,7 +652,6 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 70px;
 }
 
 .product-category-link{ 
@@ -685,7 +696,7 @@ a{
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    padding-bottom: 154px;
+    padding-bottom: 150px;
     padding-top: 95px;
 }
 
@@ -707,7 +718,7 @@ a{
     height: 320px;
     width: 7px;
     background-color: var(--basic-black);
-    bottom: -64px;
+    top: -80px;
     right: 0;
     display: block;
     background-repeat: no-repeat;
@@ -736,7 +747,11 @@ a{
 }
 
 .advantages-button-list li:not(:last-child){
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+}
+
+.advantages-slid-list{
+    margin-left: 17px;
 }
 
 .advantages-slid-item{
@@ -799,7 +814,7 @@ a{
     font-family: 'Gilroy';
     letter-spacing: 0.2em;
     margin: 0;
-    margin-bottom: 40px;
+
 }
 
 .advantages-slid-item p{
@@ -807,6 +822,7 @@ a{
     line-height: 28px;
     width: 495px;
     letter-spacing: 0.1em;
+    margin-top: 40px;
 }
 
 /*Партнеры*/
@@ -833,6 +849,7 @@ a{
 .contact-info{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 50px;
     margin-bottom: 84px;
 }
 
@@ -847,7 +864,7 @@ a{
     margin: 0;
     padding: 0;
     padding-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 41px;
 }
 
 .about-header::before{
@@ -856,7 +873,7 @@ a{
     width: 80px;
     height: 7px;
     background-color: var(--basic-black);
-    top: 0;
+    top: -7px;
     left: 0;
 }
 
@@ -871,7 +888,7 @@ a{
 }
 
 .about p:nth-child(3){
-    margin-bottom: 60px;
+    margin-bottom: 58px;
 }
 
 .about-list{
@@ -882,11 +899,11 @@ a{
     font-family: 'Gilroy';
     padding: 0;
     margin: 0;
-    margin-bottom: 84px;
+    margin-bottom: 70px;
 }
 
 .about-item:not(:last-child){
-    margin-bottom: 21px;
+    margin-bottom: 15px;
 }
 
 .about-item{
@@ -923,7 +940,7 @@ a{
     font-family: 'Gilroy';
     margin: 0;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 41px;
     padding-top: 50px;
     position: relative;
 }
@@ -934,7 +951,7 @@ a{
     width: 80px;
     height: 7px;
     background-color: var(--basic-black);
-    top: 0;
+    top: -9px;
     left: 0;
 }
 
@@ -946,8 +963,11 @@ a{
 }
 
 .contacts-maps{
+    margin-bottom: 75px;
     display: block;
-    margin-bottom: 98px;
+}
+
+.contacts-maps img{
     display: block;
 }
 
@@ -959,12 +979,12 @@ a{
 
 .main-footer{
     background-color: var(--basic-dark);
-    padding-top: 46px;
+    padding-top: 40px;
     padding-bottom: 64px;
 }
 
 .footer-logo{
-    margin-top: 12px;
+    margin-top: 15px;
 }
 .footer-logo:hover{
     opacity: 0.7;
@@ -1050,7 +1070,7 @@ a{
     margin: 0;
     align-items: start;
     display: flex;
-    margin-right: 39px;
+    margin-right: 22px;
 }
 
 .footer-user-link a:not(.footer-logo){
@@ -1081,7 +1101,7 @@ a{
 .footer-row-one-info{
     list-style: none;
     font-family: 'Gilroy';
-    letter-spacing: 0.2em;
+    letter-spacing: 3px;
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
@@ -1090,10 +1110,13 @@ a{
     padding: 0;
     width: 423px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: start;
     flex-wrap: wrap;
+}
+
+.footer-row-one-info li:not(:nth-child(3n)){
+    margin-right: 36px;
 }
 
 .footer-row-one-info a{
@@ -1129,7 +1152,6 @@ a{
 .footer-social-list{
     width: 136px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
@@ -1144,8 +1166,13 @@ a{
 }
 
 .footer-social-list li{
-    width: 35px;
+    width: 32px;
     height: 42px;
+    margin-right: 20px;
+}
+
+.footer-social-list li:nth-child(3n){
+    margin-right: 0px;
 }
 
 .facebook::before{
@@ -1435,7 +1462,16 @@ a{
 .choice-color-item label,
 .specifications label{
     cursor: pointer;
-    margin-left: 42px;
+    padding-left: 42px;
+}
+
+.choice-color-item label:hover,
+.choice-color-item:focus-within label{
+    opacity: 0.6;
+}
+
+.choice-color-input:disabled + label{
+    opacity: 0.3;
 }
 
 .choice-color-item:not(:last-child){
@@ -1465,6 +1501,15 @@ a{
 
 .specifications-item:not(:last-child){
     margin-bottom: 20px;
+}
+
+.specifications-item label:hover,
+.specifications-item:focus-within label{
+    opacity: 0.6;
+}
+
+.specifications-input:disabled + label{
+    opacity: 0.3;
 }
 
 .specifications-input + label::before{
@@ -1625,7 +1670,7 @@ a{
     z-index: 1;
 }
 
-.catalogue-item:nth-child(4)::before{
+.new-product::before{
     position: absolute;
     content: '';
     width: 62px;
@@ -1800,7 +1845,7 @@ a{
     opacity: 0.3;
 }
 
-.model-forms{
+.modal-forms{
     width: 960px;
     padding: 92px 100px;
     padding-bottom: 69px;
@@ -1816,7 +1861,7 @@ a{
     display: none;
 }
 
-.model-map{
+.modal-map{
     width: 960px;
     height: 560px;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
@@ -1829,7 +1874,7 @@ a{
     display: none;
 }
 
-.model-form label{
+.modal-form label{
     font-family: 'Gilroy';
     font-weight: 800;
     font-size: 18px;
@@ -1840,9 +1885,9 @@ a{
     width: 360px;
     padding: 15px 20px;
     box-sizing: border-box;
-    padding-right: 0;
     border: none;
     background-color: var(--dark-white);
+    outline: none;
 }
 
 .input-form:hover{
@@ -1854,20 +1899,20 @@ a{
     border: 2px solid var(--special-yellow);
 }
 
-.model-form{
+.modal-form{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.model-form p{
+.modal-form p{
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
 }
 
-.model-form p:nth-child(3){
+.modal-form p:nth-child(3){
     margin-top: 32px;
 }
 
@@ -1878,8 +1923,8 @@ a{
     border: none;
     background-color: var(--dark-white);
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-top: 16px;
+    padding: 20px 16px;
+    outline: none;
 }
 
 .letter:hover{
@@ -1895,9 +1940,12 @@ a{
     width: 200px;
     background-color:var(--basic-white);
     margin-top: 54px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
-.close-model{
+.close-modal{
     position: absolute;
     content: '';
     width: 55px;
@@ -1906,18 +1954,20 @@ a{
     background-color: var(--special-yellow-dark);
     background-image: url('../img/icon_cross.svg');
     background-repeat: no-repeat;
-    background-position: 13px 12px;
+    background-position: 13px 11px;
     opacity: 0.5;
     cursor: pointer;
     right: 20px;
     top: 28px;
+    border: none;
+    outline: none;
 }
 
-.close-model:hover{
+.close-modal:hover{
     opacity: 1;
 }
 
-.close-model:active{
+.close-modal:active{
     opacity: 0.3;
 }
 
