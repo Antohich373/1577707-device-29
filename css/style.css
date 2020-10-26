@@ -28,7 +28,7 @@
 }
 
 @font-face {
-    font-family: 'Gilroy' 'Arial';
+    font-family: 'Gilroy';
     src: local('Gilroy Extrabold'), local('Gilroy Extrabold'),
         url('../fonts/gilroyextrabold.woff2') format('woff2'),
         url('../fonts/gilroyextrabold.woff') format('woff');
@@ -37,7 +37,7 @@
   }
 
   @font-face {
-    font-family: 'Gilroy'  'Arial';
+    font-family: 'Gilroy';
     src: local('Gilroy Light'), local('Gilroy Light'),
         url('../fonts/gilroylight.woff2') format('woff2'),
         url('../fonts/gilroylight.woff') format('woff');
