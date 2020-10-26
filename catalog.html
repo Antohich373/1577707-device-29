@@ -60,27 +60,26 @@
             <h2>фильтр:</h2>
           </div>  
         </div>
-        <div class="filtr-form-wraper">
-          <form class="filtr-form" method="GET" action="https://echo.htmlacademy.ru">
-            <fieldset>
-              <legend>Стоимость</legend>
-                <div class="range-filter">
-                    <div class="range-conrols">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="toggle toggle-min"></div>
-                      <div class="toggle toggle-max"></div>
+        <form class="filtr-form" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость</legend>
+              <div class="range-filter">
+                  <div class="range-conrols">
+                    <div class="scale">
+                      <div class="bar"></div>
                     </div>
-                    <div class="price-controls">
-                      <label class="min-price">
-                        от <input type="number" name="min-price" value="0">
-                      </label>
-                      <label class="min-price">
-                        до <input type="number" name="max-price" value="5000">
-                      </label>
-                    </div>
-                </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="min-price">
+                      до <input type="number" name="max-price" value="5000">
+                    </label>
+                  </div>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
@@ -111,7 +110,7 @@
               <legend>Bluetooth</legend>
               <ul class="specifications">
                 <li class="specifications-item">
-                  <input class="visually-hidden specifications-input" type="radio" name="specifications" id="exist">
+                  <input class="visually-hidden specifications-input" type="radio" name="specifications" id="exist" checked>
                   <label for="exist">Есть</label>
                 </li>
                 <li class="specifications-item">
@@ -122,7 +121,6 @@
               <button class="filter-button button" type="submit">Показать</button>
             </fieldset>
           </form>
-        </div>  
       </section>
         <!--Каталог товаров-->
       <section class="catalogue">
@@ -131,13 +129,13 @@
           <div class="catalogue-sort-wraper">
             <h3>сортировка:</h3>
             <ul class="catalogue-sort-list">
-              <li><a href='#'>По цене</a></li>
-              <li><a href='#'>По типу</a></li>
-              <li><a href='#'>По популярности</a></li>
+              <li><a class="sort-active">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По популярности</a></li>
             </ul>
             <div class="catalogue-sort-links">
-              <a class="dir-up"><span class="visually-hidden">по убыванию</span></a>
-              <a class="dir-down"><span class="visually-hidden">по возрастанию</span></a>
+              <a class="dir-up" href="#"><span class="visually-hidden">по убыванию</span></a>
+              <a class="dir-down" href="#"><span class="visually-hidden">по возрастанию</span></a>
             </div>
           </div>
         </div>
@@ -246,6 +244,6 @@
    <section>
 
    </section>
-
+   <script src="/js/popup.js"></script>
   </body>
 </html>

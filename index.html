@@ -46,11 +46,6 @@
       <!--Демонстрация товаров-->
       <section class="product container">
         <h2 class="visually-hidden">Демонстрация товаров</h2>
-        <ul class="product-button-list">
-          <li><button aria-label="Слайд 1" type="button" class="product-botton product-button--active"></button></li>
-          <li><button aria-label="Слайд 2" type="button" class="product-botton"></button></li>
-          <li><button aria-label="Слайд 3" type="button" class="product-botton"></button></li>
-        </ul>
         <ul class="product-list">
           <li class="product-item product-item--active">
             <div class="product-item-img">
@@ -113,6 +108,11 @@
             </div>  
           </li>
         </ul>
+        <ul class="product-button-list">
+          <li><button aria-label="Слайд 1" type="button" class="product-botton product-button--active"></button></li>
+          <li><button aria-label="Слайд 2" type="button" class="product-botton"></button></li>
+          <li><button aria-label="Слайд 3" type="button" class="product-botton"></button></li>
+        </ul>
       </section>
 
       <!--Категории товаров-->
@@ -148,7 +148,7 @@
               <span class="product-img">
                 <img src="img/product-category4.svg" alt="Фитнес браслет" width="107" height="65">
               </span>
-              <span>Фитнес браслеты</span>
+              <span>Фитнеc-браслеты</span>
             </a>
           </li>
           <li>
@@ -199,7 +199,7 @@
               <h3>Кредит</h3>
               <p>
                 Залезть в долговую яму стало еще проще! Кредитные консультанты подберут для вас 
-                наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумееться.
+                наиболее выгодные условия кредита. Выгодные для нашего банка, разумееться.
               </p>
             </li>
           </ul>
@@ -252,16 +252,14 @@
 
     <footer class="main-footer">
       <div class="container">
-        <div class="footer-user-link">
-          <a class="footer-logo"><img src="img/footer-logo.svg" alt="логотип-Device" width="163" height="34"></a>
-          <div class="user-social">
-            <ul class="footer-login-list">
-              <li class="footer-login-item"><a href="#" class="footer-login-link">Войти</a></li>
-            </ul>
-            <a href="#" class="footer-compare-link">Сравнить</a>
-            <a href="#" class="footer-basket-link">Корзина</a>
-          </div>
+        <div class="user-social">
+          <ul class="footer-login-list">
+            <li class="footer-login-item"><a href="#" class="footer-login-link">Войти</a></li>
+          </ul>
+          <a href="#" class="footer-compare-link">Сравнить</a>
+          <a href="#" class="footer-basket-link">Корзина</a>
         </div>
+        <a class="footer-logo"><img src="img/footer-logo.svg" alt="логотип-Device" width="163" height="34"></a>
         <div class="footer-row-one">
           <p >г. Москва, ул. Строителей, 15</p> 
           <ul class="footer-row-one-info">
@@ -298,16 +296,16 @@
         <label for="letter">Текст письма:</label>
         <textarea class="letter" name="letter" rows="" cols="100" id="letter" placeholder="В свободной форме"></textarea>
       </p>
-      <button type="submit" aria-label="закрыть окно" class="button button-form">Отправить</button>
-      <button type="button" class="close-modal"></button>
+      <button type="submit" class="button button-form">Отправить</button>
     </form>
+    <button type="button" aria-label="закрыть окно" class="close-modal"></button>
   </section>
 
   <!--Попап-карта-->
   <section class="modal modal-map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2078.1679147203513!2d49.66148631556104!3d58.6095197755678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTjCsDM2JzM0LjMiTiA0OcKwMzknNDkuMiJF!5e0!3m2!1sru!2sru!4v1603100519930!5m2!1sru!2sru" width="100%" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <div class="close-model"></div>
+    <button type="button" aria-label="закрыть окно" class="close-modal close-modal-map"></button>
   </section>
-
+  <script src="/js/popup.js"></script>
   </body>
 </html>
