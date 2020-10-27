@@ -85,7 +85,7 @@
               <legend>Цвет</legend>
               <ul class="choice-color">
                 <li class="choice-color-item">
-                  <input class="visually-hidden choice-color-input" type="checkbox" name="color" id="black">
+                  <input class="visually-hidden choice-color-input" type="checkbox" name="color" id="black" checked>
                   <label for="black">Черный</label>
                 </li>
                 <li class="choice-color-item">
@@ -93,15 +93,15 @@
                   <label for="white">Белый</label>
                 </li>
                 <li class="choice-color-item">
-                  <input class="visually-hidden choice-color-input" type="checkbox" name="color" id="blue">
+                  <input class="visually-hidden choice-color-input" type="checkbox" name="color" id="blue" checked>
                   <label for="blue">Синий</label>
                 </li>
                 <li class="choice-color-item">
-                  <input class="visually-hidden choice-color-input" type="checkbox" name="color" id="red">
+                  <input class="visually-hidden choice-color-input" type="checkbox" name="color" id="red" checked>
                   <label for="red">Красный</label>
                 </li>
                 <li class="choice-color-item">
-                  <input class="visually-hidden choice-color-input" type="checkbox" name="color" id="pink" checked disabled>
+                  <input class="visually-hidden choice-color-input" type="checkbox" name="color" id="pink">
                   <label for="pink">Розовый</label>
                 </li>
               </ul>
@@ -110,7 +110,7 @@
               <legend>Bluetooth</legend>
               <ul class="specifications">
                 <li class="specifications-item">
-                  <input class="visually-hidden specifications-input" type="radio" name="specifications" id="exist" checked>
+                  <input class="visually-hidden specifications-input" type="radio" name="specifications" id="exist">
                   <label for="exist">Есть</label>
                 </li>
                 <li class="specifications-item">
@@ -165,7 +165,7 @@
           <li class="catalogue-item">
             <img src="img/catalog3.jpg" alt="Непотопляемая селфи-палка"  width="360" height="380">
             <div class="catalogue-item-info">
-              <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+              <h3><a href="#">Непотопляемая <br> селфи-палка</a></h3>
               <p>1 500 руб.</p> 
             </div>
             <div class="catalogue-item-popup">
@@ -202,18 +202,15 @@
 
     <footer class="main-footer">
       <div class="container">
-        <div class="footer-user-link">
-          <a class="footer-logo"><img src="img/footer-logo.svg" alt="логотип-Device" width="163" height="34"></a>
-          <div class="user-social">
-            <ul class="footer-login-list">
-              <li class="footer-login-item"><a href="#" class="footer-user-name">Валентин Петухов</a></li>
-              <li class="footer-login-item"><a href="#" class="footer-login-link">Выйти</a></li>
-            </ul>
-            <a href="#" class="footer-compare-link">Сравнить</a>
-            <a href="#" class="footer-basket-link">Корзина</a>
-          </div>
-
+        <div class="user-social">
+          <ul class="footer-login-list">
+            <li class="footer-login-item"><a href="#" class="footer-user-name">Валентин Петухов</a></li>
+            <li class="footer-login-item"><a href="#" class="footer-login-link">Выйти</a></li>
+          </ul>
+          <a href="#" class="footer-compare-link">Сравнить</a>
+          <a href="#" class="footer-basket-link">Корзина</a>
         </div>
+        <a class="footer-logo"><img src="img/footer-logo.svg" alt="логотип-Device" width="163" height="34"></a>
         <div class="footer-row-one">
           <p >г. Москва, ул. Строителей, 15</p> 
           <ul class="footer-row-one-info">
@@ -233,17 +230,5 @@
         </div>
       </div>
   </footer>
-    
-    
-    <!--Попап-форма-->
-    <section>
-
-    </section>
-
-   <!--Попап-карта-->
-   <section>
-
-   </section>
-   <script src="/js/popup.js"></script>
   </body>
 </html>

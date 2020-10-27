@@ -15,6 +15,7 @@
     --special-green: #91C92F;
     --special-yellow-dark:#F0C52E;
     --special-yellow-dark-100:#FFC600;
+    --crimson:#F6DADA;
 }
 .visually-hidden {
 	position: absolute !important;
@@ -238,7 +239,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 48px;
-    align-items: center;
+    align-items: baseline;
     margin-top: 10px;
 }
 
@@ -321,6 +322,11 @@ a{
     opacity: 0.3;
  }
 
+ .login-item:nth-child(2):hover,
+ .login-item:nth-child(2):focus{
+    opacity: 0.6;
+ }
+
 .login-item:nth-child(1) a{
      position: relative;
      padding-left: 25px;
@@ -338,19 +344,10 @@ a{
    background-repeat: no-repeat;
 }
 
-.login-list:hover,
-.login-list:focus{
-    opacity: 0.6;
-}
-
-.login-list:active{
-    opacity: 0.3;
-}
-
 .navigation-list{
     display: flex;
     flex-wrap: wrap;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -387,12 +384,12 @@ a{
 
 .navigation-item:nth-child(2){
     margin: 0;
-    margin-right: 38px;
+    margin-right: 34px;
 }
 
 .navigation-item:nth-child(3){
     margin: 0;
-    margin-right: 97px;
+    margin-right: 101px;
 }
 
 .navigation-item:nth-child(4){
@@ -445,7 +442,7 @@ a{
 }
 
 .catalog-item{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-right: 61px;
 }
 
@@ -481,12 +478,12 @@ a{
     list-style: none;
     padding: 0;
     position: absolute;
-    right: 106px;
+    right: 88px;
     bottom: 137px;
     z-index: 1;
 }
 
-.product-button-list li:not(:nth-child(3n)){
+.product-button-list li{
     margin-right: 18px;
 }
 
@@ -529,7 +526,7 @@ a{
     content: '01';
     right: 47px;
     top: 0px;
-    font-family: Gilroy;
+    font-family: 'Gilroy', 'Arial';
     font-style: normal;
     font-weight: 800;
     font-size: 179px;
@@ -543,7 +540,7 @@ a{
     content: '02';
     right: 47px;
     top: -20px;
-    font-family: Gilroy;
+    font-family: 'Gilroy', 'Arial';
     font-style: normal;
     font-weight: 800;
     font-size: 179px;
@@ -556,7 +553,7 @@ a{
     content: '03';
     right: 47px;
     top: -20px;
-    font-family: Gilroy;
+    font-family: 'Gilroy', 'Arial';
     font-style: normal;
     font-weight: 800;
     font-size: 179px;
@@ -585,7 +582,7 @@ a{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     font-style: normal;
     font-weight: 800;
     margin: 0;
@@ -621,7 +618,7 @@ a{
 }
 
 .product-specification-item{
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     font-weight: lighter;
     letter-spacing: 0.1em;
     margin-right: 60px;
@@ -671,7 +668,7 @@ a{
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     display: block;
     letter-spacing: 0.05em;
 }
@@ -710,8 +707,8 @@ a{
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    padding-bottom: 150px;
-    padding-top: 95px;
+    padding-bottom: 130px;
+    padding-top: 85px;
 }
 
 .advantages-button-list,
@@ -793,7 +790,7 @@ a{
     height: 164px;
     background-image: url('../img/delivery.svg');
     right: 0px;
-    top: -16px;
+    top: 0px;
     display: block;
     background-repeat: no-repeat;
 }
@@ -805,7 +802,7 @@ a{
     height: 195px;
     background-image: url('../img/advantages-slide2.svg');
     right: 0px;
-    top: -35px;
+    top: 0px;
     display: block;
     background-repeat: no-repeat;
 }
@@ -817,7 +814,7 @@ a{
     height: 188px;
     background-image: url('../img/advantages-slide3.svg');
     right: 0px;
-    top: -40px;
+    top: 0px;
     display: block;
     background-repeat: no-repeat;
 }
@@ -825,10 +822,12 @@ a{
 .advantages-slid-item h3{
     font-weight: 800;
     font-size: 47px;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     letter-spacing: 0.2em;
     margin: 0;
-
+    line-height: 58px;
+    margin-top: 0px;
+    margin-bottom: 44px;
 }
 
 .advantages-slid-item p{
@@ -836,7 +835,6 @@ a{
     line-height: 28px;
     width: 495px;
     letter-spacing: 0.1em;
-    margin-top: 40px;
 }
 
     /*Партнеры*/
@@ -851,13 +849,14 @@ a{
 }
 
 .partners-link{
-    opacity: 0.3;
+    filter: grayscale(100);
     display: block;
+    transition: all 0.3s;
 }
 
 .partners-link:hover,
 .partners-link:focus{
-    opacity: 1;
+    filter: grayscale(0);
 }
 
     /*О нас*/
@@ -874,7 +873,7 @@ a{
     font-size: 47px;
     line-height: 58px;
     letter-spacing: 0.2em;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     padding-top: 50px;
     position: relative;
     margin: 0;
@@ -912,7 +911,7 @@ a{
     font-weight: 800;
     font-size: 16px;
     line-height: 28px;  
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     padding: 0;
     margin: 0;
     margin-bottom: 70px;
@@ -953,7 +952,7 @@ a{
     font-size: 47px;
     line-height: 58px;
     letter-spacing: 0.2em;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     margin: 0;
     padding: 0;
     margin-bottom: 41px;
@@ -1019,7 +1018,9 @@ a{
     flex-wrap: wrap;
     max-width: 480px;
     margin-left: auto;
+    justify-content: flex-end;
 }
+
 
 .user-social a{
     color: var(--basic-white);
@@ -1042,8 +1043,10 @@ a{
 .footer-login-item:nth-child(1) a{
     position: relative;
     padding-left: 22px;
-    margin-right: 24px;
+    margin-right: 22px;
 }
+
+
 
 .footer-login-item:nth-child(1) a::before{
     position: absolute;
@@ -1101,7 +1104,10 @@ a{
     align-items: start;
     display: flex;
     margin-right: 22px;
-    margin-left: auto;
+}
+
+.footer-login-list li:nth-child(2){
+    margin-right: 25px;
 }
 
 .footer-row-one{
@@ -1118,7 +1124,7 @@ a{
 
 .footer-row-one-info{
     list-style: none;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     letter-spacing: 3px;
     font-weight: 800;
     font-size: 18px;
@@ -1268,7 +1274,7 @@ a{
 }
 
 .breadcrumbs h1{
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     font-weight: 800;
     font-size: 47px;
     margin: 0;
@@ -1303,8 +1309,8 @@ a{
     width: 12px;
     height: 12px;
     background-image: url('../img/icon_arrow_nav.svg');
-    right: -20px;
-    top: 5px;
+    right: -28px;
+    top: 2px;
     display: block;
     background-repeat: no-repeat;
 }
@@ -1353,15 +1359,11 @@ a{
 
 .filtr-wraper{
     display: block;
-    width: 367px;
-    padding-left: 100px;
     box-sizing: border-box;
     margin-left: auto;
-    display: block;
-    width: 367px;
-    padding-left: 100px;
-    box-sizing: border-box;
-    margin-left: auto;
+    width: 330px;
+    padding-left: 130px;
+    margin-right: 60px;
 }
 
 .filtr-wraper h2{
@@ -1369,7 +1371,7 @@ a{
     padding: 0;
     padding-top: 25px;
     padding-bottom: 25px;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
@@ -1379,15 +1381,18 @@ a{
 
 .filtr-form fieldset{
     border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .filtr-form{
     border: none;
     display: block;
-    width: 368px;
-    padding-left: 100px;
+    width: 330px;
+    padding-left: 130px;
     box-sizing: border-box;
     margin-left: auto;
+    margin-right: 60px;
 }
 
 .range-filter{
@@ -1407,7 +1412,7 @@ a{
 }
 
 .range-conrols .bar{
-    width: 94px;
+    width: 112px;
     height: 2px;
     background-color: var( --special-green);
 }
@@ -1430,7 +1435,7 @@ a{
 }
 
 .range-conrols .toggle-max{
-    left: 94px;
+    left: 112px;
 }
 
 .price-controls input{
@@ -1438,17 +1443,17 @@ a{
     border: none;
     background-color: inherit;
     font-size: 14px;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
 }
 
 .filtr-form legend{
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     font-weight: 800;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.1em;
-    margin-bottom: 30px;
-    padding-top: 14px;
+    margin-bottom: 32px;
+    padding-top: 17px;
     position: relative;
 }
 
@@ -1462,12 +1467,8 @@ a{
     border-radius: 2px;
 }
 
-.filtr-form fieldset{
-    margin-bottom: 40px;
-}
-
 .filtr-form fieldset:nth-child(1){
-    margin-bottom: 40px;
+    margin-bottom: 34px;
     margin-top: 70px;
 }
 
@@ -1485,14 +1486,15 @@ a{
 .choice-color li,
 .specifications li{
     display: flex;
+    position: relative;
 }
 
 .choice-color-item label,
 .specifications label{
     cursor: pointer;
     padding-left: 42px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .choice-color-item label:hover,
@@ -1505,14 +1507,18 @@ a{
 }
 
 .choice-color-item:not(:last-child){
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+}
+
+.choice-color-item:last-child{
+    margin-bottom: 35px;
 }
 
 .choice-color-input + label::before{
     position: absolute;
     content: '';
-    width: 24px;
-    height: 24px;
+    width: 19px;
+    height: 19px;
     border: 2px solid var(--basic-black);
     border-radius: 2%;
     left: 0px;
@@ -1523,20 +1529,22 @@ a{
     position: absolute;
     content: '';
     background-image: url('../img/icon_check.svg');
-    width: 20px;
-    height: 20px;
-    left: 4px;
+    width: 18px;
+    height: 18px;
+    left: 2px;
+    top: 2px;
     background-repeat: no-repeat;
 }
 
 .specifications-item:not(:last-child){
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
 
 .specifications-item label:hover,
 .specifications-item:focus-within label{
     opacity: 0.6;
 }
+
 
 .specifications-input:disabled + label{
     opacity: 0.3;
@@ -1545,11 +1553,12 @@ a{
 .specifications-input + label::before{
     position: absolute;
     content: '';
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     border: 2px solid var(--basic-black);
     border-radius: 50%;
     left: 0px;
+    bottom: 0;
     transform: translateY(-4px);
 }
 
@@ -1558,7 +1567,8 @@ a{
     content: '';
     width: 8px;
     height: 8px;
-    left: 10px;
+    left: 7px;
+    top: 2px;
     transform: translateY(6px);
     background-color: var(--basic-black);
     border-radius: 50%;
@@ -1567,7 +1577,7 @@ a{
 .filter-button{
     background-color: var(--basic-grey-light);
     width: 200px;
-    margin-top: 53px;
+    margin-top: 35px;
 }
 
     /*Каталог товаров*/
@@ -1576,9 +1586,9 @@ a{
 }
 
 .catalogue-sort-wraper{
-    width: 833px;
+    width: 826px;
     display: flex;
-    padding: 25px 75px;
+    padding: 25px 83px;
     padding-right: 0;
 }
 
@@ -1587,7 +1597,7 @@ a{
     padding: 0;
     margin-right: 74px;
     text-transform: uppercase;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -1607,7 +1617,7 @@ a{
     padding: 0;
     margin: 0;
     display: flex;
-    margin-right: 230px;
+    margin-right: 221px;
 }
 
 .catalogue-sort-list li{
@@ -1695,7 +1705,7 @@ a{
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
-    margin-left: 75px;
+    margin-left: 80px;
     margin-top: 69px;
     margin-right: 0;
 }
@@ -1719,7 +1729,7 @@ a{
 }
 
 .catalogue-item img{
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 }
 
 .catalogue-item-info {
@@ -1731,7 +1741,7 @@ a{
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.05em;
-    font-family: Gilroy;
+    font-family: 'Gilroy', 'Arial';
     margin: 0;
     padding: 0;
     width: 270px;
@@ -1812,7 +1822,7 @@ a{
     background-color: var( --basic-half-200);
     display: flex;
     justify-content: space-between;
-    margin-left: 72px;
+    margin-left: 81px;
     box-sizing: border-box;
     margin-bottom: 78px;
 }
@@ -1822,7 +1832,7 @@ a{
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
-    font-family: Gilroy;
+    font-family: 'Gilroy', 'Arial';
     letter-spacing: 0.1em;
     text-transform: uppercase;
     padding: 25px 30px;
@@ -1917,6 +1927,31 @@ a{
     animation-duration: 2s;
 }
 
+@keyframes eror{
+    0% {transform: translateX(-30px);}
+    20%{transform: translateX(30px);}
+    30% {transform: translateX(-20px);} 
+    40% {transform: translateX(20px);} 
+    60% {transform: translateX(-10px);} 
+    80% {transform: translateX(10px);} 
+
+}
+
+.modal-form-eror{
+    animation-name: eror;
+    animation-duration: 0.7s;
+}
+
+.input-name.eror-input{
+    background-color: var(--crimson);
+}
+.input-email.eror-input{
+    background-color: var(--crimson);
+}
+.letter.eror-input{
+    background-color: var(--crimson);
+}
+
 .modal-map{
     height: 560px;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
@@ -1936,7 +1971,7 @@ a{
 }
 
 .modal-form label{
-    font-family: 'Gilroy';
+    font-family: 'Gilroy', 'Arial';
     font-weight: 800;
     font-size: 18px;
     margin-bottom: 10px;
@@ -2034,8 +2069,5 @@ a{
 .close-modal:active{
     opacity: 0.3;
 }
-
-
-
 
 
