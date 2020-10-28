@@ -451,7 +451,7 @@ a{
 }
 
 .catalog-item:nth-child(5){
-    height: 52px;
+    margin-bottom: 50px;
 }
 
 .catalog-item a:hover,
@@ -683,8 +683,12 @@ a{
     margin-bottom: 38px;
 }
 
-.product-category-list li{
+.product-category-item{
     width: 160px;
+}
+
+.product-category-item:nth-child(4) span{
+    letter-spacing: normal;
 }
 
 .product-category-link:hover .product-img,
@@ -1016,9 +1020,9 @@ a{
 .user-social{
     display: flex;
     flex-wrap: wrap;
-    max-width: 480px;
     margin-left: auto;
     justify-content: flex-end;
+    padding-left: 163px;
 }
 
 
@@ -1945,7 +1949,7 @@ a{
 .input-name.eror-input{
     background-color: var(--crimson);
 }
-.input-email.eror-input{
+.input-email.eror-input:invalid{
     background-color: var(--crimson);
 }
 .letter.eror-input{
