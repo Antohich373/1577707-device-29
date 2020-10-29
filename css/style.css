@@ -854,6 +854,7 @@ a{
 
 .partners-link{
     filter: grayscale(100);
+    opacity: 0.3;
     display: block;
     transition: all 0.3s;
 }
@@ -861,6 +862,7 @@ a{
 .partners-link:hover,
 .partners-link:focus{
     filter: grayscale(0);
+    opacity: 1;
 }
 
     /*О нас*/
@@ -970,7 +972,7 @@ a{
     width: 80px;
     height: 7px;
     background-color: var(--basic-black);
-    top: -9px;
+    top: -5px;
     left: 0;
 }
 
@@ -1949,7 +1951,7 @@ a{
 .input-name.eror-input{
     background-color: var(--crimson);
 }
-.input-email.eror-input:invalid{
+.input-email:invalid{
     background-color: var(--crimson);
 }
 .letter.eror-input{
