@@ -12,7 +12,6 @@ let closeModalMap = document.querySelector('.close-modal-map');
 let closeModalForm = document.querySelector('.close-modal');
 
 let name = popupForm.querySelector('.input-name')
-let email = popupForm.querySelector('.input-email')
 let text = popupForm.querySelector('.letter')
 
 
@@ -24,14 +23,6 @@ form.addEventListener('submit', function(evt){
         evt.preventDefault();
         popupForm.classList.add('modal-form-eror');
         name.classList.add('eror-input')
-    }
-});
-
-form.addEventListener('submit', function(evt){
-    if(!email.value){
-        evt.preventDefault();
-        popupForm.classList.add('modal-form-eror');
-        email.classList.add('eror-input')
     }
 });
 
@@ -69,11 +60,10 @@ closeModalForm.addEventListener('click', function(evt){
     text.classList.remove('eror-input')
 });
 
+/*закрытие попап кнопкой esc*/
 window.addEventListener('keydown', function(evt){
     if(evt.keyCode === 27){
         evt.preventDefault();
-    
-
        if(popupMap.classList.contains('modal-map-showe') || popupForm.classList.contains('modal-form-showe')){
         popupMap.classList.remove('modal-map-showe');
         popupForm.classList.remove('modal-form-showe');
