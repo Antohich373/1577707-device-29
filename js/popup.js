@@ -60,7 +60,7 @@ closeModalForm.addEventListener('click', function(evt){
     text.classList.remove('eror-input')
 });
 
-/*закрытие попап кнопкой esc*/
+/*закрытие popup кнопкой esc*/
 window.addEventListener('keydown', function(evt){
     if(evt.keyCode === 27){
         evt.preventDefault();
