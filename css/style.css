@@ -187,7 +187,7 @@ a{
     content: '';
     width: 16px;
     height: 16px;
-    background-image: url('../img/icon_search.svg');
+    background-image: url('../img/icon-search.svg');
     left: 0;
     top: 5px;
     z-index: 1;
@@ -284,7 +284,7 @@ a{
     width: 14px;
     height: 14px;
     left: 0;
-    background-image: url('../img/icon_chart.svg');
+    background-image: url('../img/icon-chart-header.svg');
     background-repeat: no-repeat;
     top: 4px;
     display: block;
@@ -363,7 +363,7 @@ a{
    position: absolute;
    width: 13px;
    height: 14px;
-   background-image: url('../img/icon_user.svg');
+   background-image: url('../img/icon-user.svg');
    top: 4px;
    left: 0;
    display: block;
@@ -395,9 +395,10 @@ a{
     position: absolute;
     width: 22px;
     height: 22px;
-    background-image: url('../img/icon_plus.svg');
+    background-image: url('../img/icon-plus.svg');
     background-repeat: no-repeat;
     right: 0;
+    top: 0;
     display: block;
     background-repeat: no-repeat;
 }
@@ -657,31 +658,28 @@ a{
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 52px;
-    width: 444px;
+    width: 445px;
 }
 .product-item--text{
     margin: 0;
     margin-top: 30px;
 }
 
-.product-specification-item dt{
-    margin-bottom: 15px;
-    letter-spacing: normal;
-    letter-spacing: 0.1em;
-}
 
 .product-specification-item{
     font-family: 'Gilroy', 'Arial';
     font-weight: lighter;
     letter-spacing: 0.1em;
     margin-right: 60px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .product-specification-item:nth-child(3n){
     margin: 0;
 }
 
-.product-specification-item dd{
+.product-specification-item dt{
     font-size: 36px;
     line-height: 42px;
     -webkit-margin-start: 0px;
@@ -690,10 +688,11 @@ a{
     letter-spacing: 0.1em;
 }
 
-.product-specification-item dt{
+.product-specification-item dd{
     font-size: 13px;
     line-height: 15px;  
     margin: 0;
+
 }
 
 .product-item--botton-detail{
@@ -1424,7 +1423,7 @@ a{
     content: '';
     width: 12px;
     height: 12px;
-    background-image: url('../img/icon_arrow_nav.svg');
+    background-image: url('../img/icon-arrow-nav.svg');
     right: -28px;
     top: 2px;
     display: block;
@@ -1482,9 +1481,9 @@ a{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-left: auto;
-    width: 330px;
-    padding-left: 130px;
-    margin-right: 60px;
+    width: 347px;
+    padding-left: 79px;
+
 }
 
 .filtr-wraper h2{
@@ -1509,12 +1508,12 @@ a{
 .filtr-form{
     border: none;
     display: block;
-    width: 330px;
-    padding-left: 130px;
+    width: 347px;
+    padding-left: 79px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-left: auto;
-    margin-right: 60px;
+
 }
 
 .range-filter{
@@ -1655,7 +1654,7 @@ a{
 .choice-color-input:checked + label::after{
     position: absolute;
     content: '';
-    background-image: url('../img/icon_check.svg');
+    background-image: url('../img/icon-check.svg');
     width: 18px;
     height: 18px;
     left: 2px;
@@ -1719,12 +1718,13 @@ a{
 }
 
 .catalogue-sort-wraper{
-    width: 826px;
+    width: 851px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 25px 83px;
-    padding-right: 0;
+    padding: 25px 72px;
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 .catalogue-sort h3{
@@ -1848,7 +1848,7 @@ a{
         flex-wrap: wrap;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-left: 80px;
+    margin-left: 73px;
     margin-top: 69px;
     margin-right: 0;
 }
@@ -1872,7 +1872,7 @@ a{
 }
 
 .catalogue-item img{
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .catalogue-item-info {
@@ -1990,10 +1990,10 @@ a{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-left: 81px;
+    margin-left: 73px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-bottom: 78px;
+    margin-bottom: 82px;
 }
 
 .pagination a{
@@ -2270,7 +2270,7 @@ a{
     height: 55px;
     border-radius: 50%;
     background-color: var(--special-yellow-dark);
-    background-image: url('../img/icon_cross.svg');
+    background-image: url('../img/icon-cross.svg');
     background-repeat: no-repeat;
     background-position: 13px 11px;
     opacity: 0.5;
