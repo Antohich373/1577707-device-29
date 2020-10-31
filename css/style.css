@@ -99,7 +99,7 @@ a{
     font-size: 18px;
     line-height: 22px;
     border: none;
-    font-family: 'Gilroy';
+    font-family: 'Gilroy' 'Arial', sans-serif;
     font-style: normal;
     font-weight: 800;
     position: relative;
@@ -248,6 +248,7 @@ a{
 
 .search-button:active{
     color: var(--basic-white) 0.3;
+    color: var(--basic-white);
 }
 
 .form-search:focus-within input + .search-button{
@@ -376,7 +377,7 @@ a{
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -521,33 +522,32 @@ a{
     padding: 0;
     position: absolute;
     right: 88px;
-    bottom: 137px;
+    bottom: 135px;
     z-index: 1;
 }
 
 .product-button-list li{
-    margin-right: 18px;
+    margin-right: 17px;
 }
 
 .product-botton{
     position: relative;
-    width: 12px;
     height: 12px;
     background-color: transparent;
-    border: 1px solid black;
-    border-radius: 50%;
+    border: 1px solid var(--basic-black);
+    border-radius: 100px;
     cursor: pointer;
 }
 
 .product-button--active::before{
     position: absolute;
     content: '';
-    width: 6px;
-    height: 6px;
-    border: 1px solid #000000;
+    width: 4px;
+    height: 4px;
+    border: 1px solid var(--basic-black);
     border-radius: 50%;
-    top: 10%;
-    left: 20%;
+    top: 15%;
+    left: 25%;
     display: block;
     background-repeat: no-repeat;
 }
@@ -570,13 +570,13 @@ a{
     content: '01';
     right: 47px;
     top: 0px;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 179px;
     line-height: 219px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--basic-white);
 }
 
 .product-item:nth-child(2)::before{
@@ -584,26 +584,26 @@ a{
     content: '02';
     right: 47px;
     top: -20px;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 179px;
     line-height: 219px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--basic-white);
 }
 .product-item:nth-child(3)::before{
     position: absolute;
     content: '03';
     right: 47px;
     top: -20px;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 179px;
     line-height: 219px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--basic-white);
 }
 
 .product-list{
@@ -633,7 +633,7 @@ a{
     font-weight: 800;
     font-size: 47px;
     line-height: 58px;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 800;
     margin: 0;
@@ -667,7 +667,7 @@ a{
 
 
 .product-specification-item{
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     font-weight: lighter;
     letter-spacing: 0.1em;
     margin-right: 60px;
@@ -679,7 +679,7 @@ a{
     margin: 0;
 }
 
-.product-specification-item dt{
+.product-specification-item dd{
     font-size: 36px;
     line-height: 42px;
     -webkit-margin-start: 0px;
@@ -688,7 +688,7 @@ a{
     letter-spacing: 0.1em;
 }
 
-.product-specification-item dd{
+.product-specification-item dt{
     font-size: 13px;
     line-height: 15px;  
     margin: 0;
@@ -716,9 +716,10 @@ a{
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+}
+
+.product-category-item:not(:nth-child(6n)){
+    margin-right: 40px;
 }
 
 .product-category-link{ 
@@ -726,7 +727,7 @@ a{
     font-weight: 800;
     font-size: 18px;
     line-height: 22px;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     display: block;
     letter-spacing: 0.05em;
 }
@@ -768,8 +769,8 @@ a{
 /*Преимущества*/
 .advantages{
     background-color: var(--basic-grey-light);
-    background-image: -o-linear-gradient(  #fff 110px, var(--basic-grey-light) 110px);
-    background-image: linear-gradient(  #fff 110px, var(--basic-grey-light) 110px);
+    background-image: -o-linear-gradient(  var(--basic-white) 110px, var(--basic-grey-light) 110px);
+    background-image: linear-gradient(  var(--basic-white) 110px, var(--basic-grey-light) 110px);
 }
 
 .advantages-conteiner{
@@ -897,7 +898,7 @@ a{
 .advantages-slid-item h3{
     font-weight: 800;
     font-size: 47px;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     letter-spacing: 0.2em;
     margin: 0;
     line-height: 58px;
@@ -920,9 +921,7 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 90px;
     padding-bottom: 90px;
 }
@@ -935,6 +934,10 @@ a{
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+.partners-list li:not(:nth-child(4n)){
+    margin-right: 40px;
 }
 
 .partners-link:hover,
@@ -960,7 +963,7 @@ a{
     font-size: 47px;
     line-height: 58px;
     letter-spacing: 0.2em;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     padding-top: 50px;
     position: relative;
     margin: 0;
@@ -998,7 +1001,7 @@ a{
     font-weight: 800;
     font-size: 16px;
     line-height: 28px;  
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     padding: 0;
     margin: 0;
     margin-bottom: 70px;
@@ -1039,7 +1042,7 @@ a{
     font-size: 47px;
     line-height: 58px;
     letter-spacing: 0.2em;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     margin-bottom: 41px;
@@ -1120,6 +1123,12 @@ a{
     color: var(--basic-white);
     opacity: 0.7;
 }
+
+.user-social a::before{
+    color: var(--basic-white);
+    opacity: 0.7;
+}
+
 
 .user-social a:hover,
 .user-social a:focus{
@@ -1226,7 +1235,7 @@ a{
 
 .footer-row-one-info{
     list-style: none;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     letter-spacing: 3px;
     font-weight: 800;
     font-size: 18px;
@@ -1386,7 +1395,7 @@ a{
 }
 
 .breadcrumbs h1{
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     font-weight: 800;
     font-size: 47px;
     margin: 0;
@@ -1491,7 +1500,7 @@ a{
     padding: 0;
     padding-top: 25px;
     padding-bottom: 25px;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
@@ -1527,8 +1536,7 @@ a{
 .range-conrols .scale{
     width: 200px;
     height: 2px;
-    background-color: var(--basic-black);
-    opacity: 0.2;
+    background-color: rgba(0, 0, 0, 0.2);
     margin-bottom: 17px;
 }
 
@@ -1565,11 +1573,24 @@ a{
     border: none;
     background-color: inherit;
     font-size: 14px;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
+}
+
+.price-controls input{
+    width: 55px;
+    border: none;
+    background-color: inherit;
+    font-size: 14px;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+}
+
+.price-controls input::-webkit-outer-spin-button,
+.price-controls input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .filtr-form legend{
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     font-weight: 800;
     font-size: 14px;
     line-height: 17px;
@@ -1732,7 +1753,7 @@ a{
     padding: 0;
     margin-right: 74px;
     text-transform: uppercase;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 16px;
@@ -1754,7 +1775,9 @@ a{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 221px;
+    flex-wrap: wrap;
+    margin-right: 220px;
+    width: 290px;
 }
 
 .catalogue-sort-list li{
@@ -1888,7 +1911,7 @@ a{
     font-weight: 800;
     font-size: 18px;
     letter-spacing: 0.05em;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     width: 270px;
@@ -2001,7 +2024,7 @@ a{
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     padding: 25px 30px;
@@ -2178,7 +2201,7 @@ a{
 }
 
 .modal-form label{
-    font-family: 'Gilroy', 'Arial';
+    font-family: 'Gilroy', 'Arial', sans-serif;
     font-weight: 800;
     font-size: 18px;
     margin-bottom: 10px;
@@ -2189,7 +2212,7 @@ a{
     padding: 15px 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    border: none;
+    border: 2px solid var(--basic-white);
     background-color: var(--dark-white);
     outline: none;
 }
@@ -2235,7 +2258,7 @@ a{
     width: 100%;
     height: 167px;
     resize: none;
-    border: none;
+    border: 2px solid var(--basic-white);
     background-color: var(--dark-white);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -2272,7 +2295,7 @@ a{
     background-color: var(--special-yellow-dark);
     background-image: url('../img/icon-cross.svg');
     background-repeat: no-repeat;
-    background-position: 13px 11px;
+    background-position: 13px 12px;
     opacity: 0.5;
     cursor: pointer;
     right: 20px;
