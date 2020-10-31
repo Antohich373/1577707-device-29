@@ -1121,21 +1121,25 @@ a{
 
 .user-social a{
     color: var(--basic-white);
-    opacity: 0.7;
-}
-
-.user-social a::before{
-    color: var(--basic-white);
-    opacity: 0.7;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 
 .user-social a:hover,
 .user-social a:focus{
-    opacity: 1;
+    color: rgba(255, 255, 255, 1);
+}
+
+.user-social a:hover::before,
+.user-social a:focus::before{
+    opacity: 0.6;
 }
 
 .user-social a:active{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.user-social a:active::before{
     opacity: 0.3;
 }
 
