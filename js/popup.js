@@ -56,7 +56,6 @@ closeModalForm.addEventListener('click', function(evt){
     popupForm.classList.remove('modal-form-showe');
     popupForm.classList.remove('modal-form-eror');
     name.classList.remove('eror-input');
-    email.classList.remove('eror-input');
     text.classList.remove('eror-input')
 });
 
